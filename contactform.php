@@ -11,3 +11,4 @@ $txt= "You have recieved an e-mail from ".$name.".\n\n".$message;
 mail($mailto, $subject, $text, $headers);
 header("location: index.php?mailsend");
 }
+?>
