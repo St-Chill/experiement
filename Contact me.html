@@ -40,33 +40,21 @@
 <a href="https://www.instagram.com/your3dsa/?r=nametag" class="fa fa-instagram"></a>
 
 <!--CAPTCHA-->
-
-
-<!--form php-->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="form.css" type="text/css">
-    <h1>SEND EMAIL</h1>
-  <form class="contact-form" action="contactform.php" method="post"></br>
-  <input type="text" name="name" placeholder="full name"></br>
-  <input type="text" name="mail" placeholder="Your Email"></br>
-  <input type="text" name="suject" placeholder="Subject"></br>
-<textarea name="message" placeholder="message"></textarea> </br>
-<button type="submit"   name="submit">Send MAIL</button>
-</form>
-
-<?php
-if (isset($_POST['submit'])) {
-    $name= $_POST['name'];
-    $subject= $_POST['subject'];
-    $mailfrom= $_POST['mail'];
-    $message= $_POST['message'];
-
-$mailto = "ilyaas.kahn@younglings.africa"
-$headers = "From: ".$mailfrom;
-$txt= "You have recieved an e-mail from ".$name.".\n\n".$message;
-mail($mailto, $subject, $text, $headers);
-header("location: index.php?mailsend")
-}
+<title>reCAPTCHA demo: Explicit render after an onload callback</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : 'your_site_key'
+        });
+      };
+    </script>
+  </head>
+  iu
+    <form action="?" method="POST">
+      <div id="html_element"></div>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  
+    <script src="6Lf1LPMZAAAAAKf2QzdwANorFGAQpl28ZroG_vxi"></script>
+</head>
