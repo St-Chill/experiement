@@ -19,14 +19,14 @@
 <h2>Leave me your details</h2>
 
 
-
-<form>
- <h1>SEND EMAIL</h1>
+<h1>SEND EMAIL</h1>
   <form class="contact-form" action="contactform.php" method="post"></br>
   <input type="text" name="name" placeholder="full name"></br>
   <input type="text" name="mail" placeholder="Your Email"></br>
   <input type="text" name="suject" placeholder="Subject"></br>
-  </form>
+<textarea name="message" placeholder="message"></textarea> </br>
+<button type="submit"   name="submit">Send MAIL</button>
+</form>
 
 <?php
 if (isset($_POST['submit'])) {
